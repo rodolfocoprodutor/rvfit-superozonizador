@@ -249,6 +249,12 @@ section.s-aplicacao .container .aplicacao_content .aplicacao_list .aplicacao_lis
     vertical-align: middle;
     margin-right: .6rem;
 }
+section.s-aplicacao .container .aplicacao_content .aplicacao_content_img img{
+    display: block;
+    max-width: max-content;
+    max-height: 512px;
+    object-fit: contain;
+}
 
 section.s-vantagens {
     background-color: var(--first-color);

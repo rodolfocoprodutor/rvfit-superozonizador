@@ -32,7 +32,7 @@
     /* .5rem = 8px / 1rem = 16px */
     --body-font: 'system-ui', sans-serif;
     --header: 5.8rem;
-    --title: clamp(3.2rem, 3.8vw, 4.2rem);
+    --title: clamp(3rem, 3.8vw, 4.2rem);
     --subtitle: clamp(2rem, 2.4vw, 2.8rem);
     --subtitle-h4: clamp(1.8rem, 2.2vw, 2.4rem);
     --body-text: clamp(1.6rem, 1.8vw, 1.8rem);
@@ -86,9 +86,9 @@ h3{
 }
 p{
     font-size: var(--body-text);
-    line-height: 160%;
+    line-height: 1.4em;
     margin-top: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 li{
     font-size: var(--body-text);
@@ -375,23 +375,24 @@ section.s-oferta .container img{
     max-height: 399px;
     margin: auto;
 }
-section.s-oferta .container .oferta_contem{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    margin-top: 2.4rem;
-    align-items: center;
-    gap: 2.4rem;
-}
-section.s-oferta .container .oferta_contem ul li:nth-child(1) {
-    font-weight: 600;
+
+section.s-oferta .container ul li.subtitle {
+    content: '';
+    font-weight: 700;
     font-size: var(--subtitle);
+    line-height: 2em;
 }
-section.s-oferta .container .oferta_contem img{
-    display: block;
-    max-width: max-content;
-    max-height: 120px;
-    margin: auto;
+section.s-oferta .container ul li.subtitle::before {
+    content: '';
+}
+section.s-oferta .container ul li{
+    line-height: 1.4em;
+}
+section.s-oferta .container ul li::before{
+    content: url(../assets/bullet-points.svg);
+    height: 1.4rem;
+    vertical-align: middle;
+    margin-right: .6rem;
 }
 
 section.s-faq .container .faq_content{

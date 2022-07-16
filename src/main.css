@@ -518,7 +518,7 @@ footer section .container nav ul li {
 footer section .container nav ul li a {
     color: var(--attention-color-orange);
 }
-footer section .container .creditos span{
+footer section .container .creditos p{
     font-size: var(--body-text);
     text-align: center;
 }

@@ -1,0 +1,330 @@
+/* Variables css*/
+:root{
+    /* Colors */
+    /* Color mode HSL(hue, saturation, lightness)*/
+    /*
+        blue    :   hsl(224, 69%, 14%)
+        red     :   hsl(0, 100%, 43%)
+        gray    :   hsl(0, 0%, 98%)
+        green   :   hsl(100, 83%, 41%)
+        yellow  :   HSL(52, 100%, 50%)
+    */
+
+    --hue: 206;
+    --sat: 74%;
+    --lig: 15%;
+
+    --first-color: hsl(var(--hue), var(--sat), var(--lig)) ;
+    --second-color: hsl(193, 100%, 47%);
+    --gray-color: hsl(0, 0%, 98%);
+    --title-color: hsl(var(--hue), var(--sat), var(--lig));
+    --text-color: hsl(var(--hue), 15%, 45%);
+    --text-color-light: hsl(var(--hue), 8%, 75%);
+    --text-color-lighten: hsl(var(--hue), 8%, 92%);
+    --body-color: hsl(var(--hue), 100%, 99%);
+    --container-color: #fff;
+    --attention-color-orange: hsl(22, 100%, 50%);
+    --attention-color-red: hsl(0, 100%, 43%);
+    --attention-color-green: hsl(120, 60%, 48%);
+    --attention-color-yellow: hsl(52, 100%, 50%);
+
+    /* Font and typography */
+    /* .5rem = 8px / 1rem = 16px */
+    --body-font: 'system-ui', sans-serif;
+    --header: 5.8rem;
+    --title: clamp(3.2rem, 3.8vw, 4.2rem);
+    --subtitle: clamp(2rem, 2.4vw, 2.8rem);
+    --subtitle-h4: clamp(1.8rem, 2.2vw, 2.4rem);
+    --body-text: clamp(1.6rem, 1.8vw, 1.8rem);
+    --details: clamp(1.4rem, 1.6vw, 1.8rem);
+    --smallest: clamp(1rem, 1.2vw, 1.4rem);
+
+}
+
+*,
+*::after,
+*::before{
+    list-style:none;
+    text-decoration:none;
+    margin:0;
+    padding:0;
+    text-align:left;
+    border:0;
+    outline-color:#ccc;
+    color: var(--first-color);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    font-size:62.5%;
+    font-family: var(--body-font);
+    font-display:swap;
+}
+html{
+    max-width: 1920px;
+    margin: auto;
+    scroll-behavior: smooth;
+    direction: ltr;
+}
+
+h1{
+    font-size: var(--header);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+}
+h2{
+    font-size: var(--title);
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+}
+h3{
+    font-size: var(--subtitle);
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+p{
+    font-size: var(--body-text);
+    line-height: 160%;
+    margin-top: 1.6rem;
+    font-weight: 500;
+}
+li{
+    font-size: var(--body-text);
+    font-weight: 500;
+}
+a{
+    font-size: var(--body-text);
+    font-weight: 500;
+}
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+span{
+    font-size: inherit;
+}
+strong{
+    font-size: inherit;
+}
+details{
+    font-size: var(--details);
+}
+b{
+    font-size: inherit;
+}
+button {
+    margin-top: 4rem;
+    padding: 2rem 4rem;
+    color: #fff;
+    border-radius: 0.8rem;
+    font-size: var(--body-text);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--attention-color-orange);
+    outline: none;
+    border: none    ;
+    cursor: pointer;
+    transition: background-color .4s ease;
+    transition: box-shadow .4s ease;
+    box-shadow: 0px 1.25rem 40px -11px var(--attention-color-orange);
+}
+button:hover {
+    background-color: var(--attention-color-green);
+    box-shadow: 0px 1.25rem 40px -11px var(--attention-color-green);
+    color: #ffffff;
+}
+button:disabled{
+    background-color: #E4E4E4;
+    color: #8A8A8A;
+    box-shadow: none;
+    pointer-events: none;
+}
+main{
+    width: 100%;
+}
+section{
+    margin: auto;
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+.dourado {
+    color: var(--dourado);
+    font-weight: inherit;
+}
+.container{
+    display: grid;
+    width: min(100% - 10%, 1284px);
+    margin-inline: auto;
+    gap: 2.4rem;
+}
+.icon {
+    width: 6.4rem;
+    height: 6.4rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #000;
+}
+.brand-color{
+    color: var(--second-color);
+}
+.green-color{
+    color: var(--attention-color-green);
+}
+.title h2,
+.title h3{
+    text-align: center;
+}
+header.banner-hero {
+    display: grid;
+    place-items: center;
+}
+header .banner-hero a picture .desk{
+    display: block;
+}
+header .banner-hero a picture .mob{
+    display: block;
+}
+header .banner-hero a picture .img-fluid{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+header.banner-hero img{
+    max-width: max-content;
+    max-height: 971px;
+    object-fit: contain;
+}
+
+section.s-aplicacao .container {
+    place-items: center;
+    background-image: url(../assets/bg_section.webp);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+
+}
+section.s-aplicacao .container .title{
+    display: grid;
+    justify-content: center;
+}
+
+section.s-aplicacao .container .aplicacao_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 4rem;
+    margin-top: 3.2rem;
+}
+section.s-aplicacao .container .aplicacao_content .aplicacao_content__info{
+
+}
+section.s-aplicacao .container .aplicacao_content .aplicacao_content__info h2{
+    font-size: clamp(2.4rem, 3.2vw, 3.6rem);
+}
+section.s-aplicacao .container .aplicacao_content .aplicacao_content__info h3{
+    font-size: clamp(2rem, 2.2vw, 2.4rem);
+}
+section.s-aplicacao .container .aplicacao_content .aplicacao_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    margin-top: 3.2rem;
+}
+section.s-aplicacao .container .aplicacao_content .aplicacao_list .aplicacao_list__item{
+    display: flexbox;
+    margin-top: .6rem;
+}
+section.s-aplicacao .container .aplicacao_content .aplicacao_list .aplicacao_list__item::before{
+    content: url(../assets/bullet-points.svg);
+    height: 1.4rem;
+    vertical-align: middle;
+    margin-right: .6rem;
+}
+
+section.s-vantagens {
+    background-color: var(--first-color);
+}
+section.s-vantagens .container .title h2{
+    color: #fff;
+}
+section.s-vantagens .container .vantagens_content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 10rem;
+    margin-top: 3.2rem;
+}
+section.s-vantagens .container .vantagens_content .vantagens_content__items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 8rem;
+}
+section.s-vantagens .container .vantagens_content .vantagens_content__items .vantagens_content__item__item{
+    display: flex;
+    flex-direction:row;
+    gap: 1.6rem;
+    align-items: center;
+}
+section.s-vantagens .container .vantagens_content .vantagens_content__items .vantagens_content__item__item p{
+    color: #fff;
+    margin: 0;
+}
+section.s-vantagens .container .vantagens_content .vantagens_content__ozonizador {
+    display: grid;
+    justify-content: center;
+}
+section.s-vantagens .container .vantagens_content .vantagens_content__ozonizador img {
+    max-width: max-content;
+    max-height: 242px;
+    object-fit: contain;
+}
+section.s-vantagens .container .vantagens_content .vantagens_content__ozonizador span {
+    color: #fff;
+    font-size: var(--body-text);
+    margin-top: 2.4rem;
+    text-align: center;
+}
+
+section.s-video .container {
+    place-items: center;
+}
+section.s-video .container video{
+    width: 90%;
+    max-width: max-content;
+    max-height: 46rem;
+    border-radius: .8rem;
+}
+
+section.s-depoimentos .container .content_depoimentos{ 
+    align-content: center;
+    background: transparent;
+    padding: 0; 
+    display: grid;
+    overflow: hidden;
+    justify-content: space-around;
+}
+section.s-depoimentos .container .content_depoimentos figure {
+overflow: auto;
+scroll-snap-type: x mandatory;
+border-radius: .8rem;
+}
+section.s-depoimentos .container .content_depoimentos img {
+scroll-snap-align: start; 
+border-radius: .6rem;
+margin-bottom: 15px;
+width: max-content;
+object-fit: contain;
+height: 512px;
+margin-right: .8rem;
+}
+section.s-depoimentos .container .content_depoimentos figure {
+align-content: center;
+border:none;
+background-color: transparent;
+display: grid;
+grid: auto / repeat(7, auto);
+grid-gap: 1em;
+}

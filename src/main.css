@@ -98,6 +98,9 @@ a{
     font-size: var(--body-text);
     font-weight: 500;
 }
+.smallest{
+    font-size: var(--smallest);
+}
 img{
     width: 100%;
     height: auto;
@@ -183,13 +186,15 @@ header.banner-hero {
     display: grid;
     place-items: center;
 }
-header .banner-hero a picture .desk{
+header.banner-hero a picture .desk{
+    display: block;
+    max-height: 80rem;
+    overflow: hidden;
+}
+header.banner-hero a picture .mob{
     display: block;
 }
-header .banner-hero a picture .mob{
-    display: block;
-}
-header .banner-hero a picture .img-fluid{
+header.banner-hero a picture .img-fluid{
     max-width: 100%;
     height: auto;
     object-fit: contain;
@@ -463,4 +468,51 @@ section.s-faq .container .faq_content input:checked + .acc-label::after{
 section.s-faq .container .faq_content input:checked ~ .acc-content{
     max-height:100vh;
     padding: 1em;
+}
+
+footer{
+    background-color: var(--gray-color);
+}
+footer section .container{
+    place-items: center;
+}
+footer header.title h2{
+    font-size: var(--subtitle);
+}
+footer .container .btn-wpp{
+   background-color: var(--attention-color-green);
+   box-shadow: none;
+   margin: 0;
+}
+footer .container .btn-wpp::before{
+   content: url(../assets/icon-whatsapp.svg);
+   vertical-align: middle;
+   margin-right: .8rem;
+}
+footer section .container nav{
+    display: block;
+    width: 100%;
+    max-width: 96rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    border-top: 1px solid #CECECE;
+    border-bottom: 1px solid #CECECE;
+}
+footer section .container nav ul {
+    place-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+footer section .container nav ul li {
+    display: block;
+    max-width: 300px;
+}
+
+footer section .container nav ul li a {
+    color: var(--attention-color-orange);
+}
+footer section .container .creditos span{
+    font-size: var(--body-text);
+    text-align: center;
 }

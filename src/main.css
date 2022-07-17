@@ -340,6 +340,37 @@ grid: auto / repeat(7, auto);
 grid-gap: 1em;
 }
 
+section.s-depoimentos_videos .container .content_depoimentos_videos{ 
+    align-content: center;
+    background: transparent;
+    padding: 0; 
+    display: grid;
+    overflow: hidden;
+    justify-content: space-around;
+}
+section.s-depoimentos_videos .container .content_depoimentos_videos .media-element {
+overflow: auto;
+scroll-snap-type: x mandatory;
+border-radius: .8rem;
+}
+section.s-depoimentos_videos .container .content_depoimentos_videos video {
+scroll-snap-align: start; 
+border-radius: .6rem;
+margin-bottom: 15px;
+width: max-content;
+object-fit: contain;
+height: 512px;
+margin-right: .8rem;
+}
+section.s-depoimentos_videos .container .content_depoimentos_videos .media-element {
+align-content: center;
+border:none;
+background-color: transparent;
+display: grid;
+grid: auto / repeat(7, auto);
+grid-gap: 1em;
+}
+
 section.s-oferta {
     background-color: var(--gray-color);
     background-image: url(../assets/bg_section.webp);

@@ -132,12 +132,13 @@ b {
 }
 
 button {
-    margin-top: 4rem;
-    padding: 2rem 4rem;
+    height: 5.6rem;
+    max-width: 36rem;
+    padding: 0 4rem;
     color: #fff;
     border-radius: 0.8rem;
     font-size: var(--body-text);
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     text-transform: uppercase;
     background-color: var(--attention-color-orange);
@@ -209,6 +210,7 @@ section {
 header.banner-hero {
     display: grid;
     place-items: center;
+    background-color: var(--gray-color);
 }
 
 header.banner-hero a picture .desk {
@@ -234,10 +236,9 @@ header.banner-hero img {
 }
 
 section.s-aplicacao .container {
-    place-items: center;
     background-image: url(../assets/bg_section.webp);
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: center;
     background-size: contain;
 
 }
@@ -249,42 +250,30 @@ section.s-aplicacao .container .title {
 
 section.s-aplicacao .container .aplicacao_content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr));
     gap: 4rem;
     margin-top: 3.2rem;
+    justify-items: center;
 }
-
-section.s-aplicacao .container .aplicacao_content .aplicacao_content__info h2 {
-    font-size: clamp(2.4rem, 3.2vw, 3.6rem);
-}
-
-section.s-aplicacao .container .aplicacao_content .aplicacao_content__info h3 {
-    font-size: clamp(2rem, 2.2vw, 2.4rem);
-}
-
-section.s-aplicacao .container .aplicacao_content .aplicacao_list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    margin-top: 3.2rem;
-}
-
-section.s-aplicacao .container .aplicacao_content .aplicacao_list .aplicacao_list__item {
-    display: flexbox;
-    margin-top: .6rem;
-}
-
-section.s-aplicacao .container .aplicacao_content .aplicacao_list .aplicacao_list__item::before {
-    content: url(../assets/bullet-points.svg);
-    height: 1.4rem;
-    vertical-align: middle;
-    margin-right: .6rem;
-}
-
-section.s-aplicacao .container .aplicacao_content .aplicacao_content_img img {
-    display: block;
+section.s-aplicacao .container .aplicacao_content figure img{
     max-width: max-content;
-    max-height: 512px;
     object-fit: contain;
+}
+section.s-aplicacao .container .aplicacao_content figure figcaption{
+    font-size: var(--body-text);
+    text-align: center;
+    font-weight: 500;
+}
+section.s-aplicacao .container .aplicacao_content figure figcaption::before{
+    content: url(../assets/bullet-points.svg);
+    width: 2.4rem;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    inset: .2rem -.8rem; 
+}
+section.s-aplicacao .container a{
+    margin-top: 4rem;
+    justify-self: center;
 }
 
 section.s-vantagens {

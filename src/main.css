@@ -248,7 +248,7 @@ section.s-aplicacao .container .title {
 
 section.s-aplicacao .container .aplicacao_content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     gap: 4rem;
     margin-top: 3.2rem;
     justify-items: center;

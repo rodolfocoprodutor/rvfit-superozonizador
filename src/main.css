@@ -133,6 +133,7 @@ b {
 
 button {
     height: 5.6rem;
+    width: 100%;
     max-width: 36rem;
     padding: 0 4rem;
     color: #fff;
@@ -676,4 +677,42 @@ footer section .container .creditos p {
     max-height: 384px;
     object-fit: contain;
     max-width: max-content;
+}
+
+.s-banner-pressel .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 4rem;
+    
+}
+.s-banner-pressel .container .content_pressel_video{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    overflow: hidden;
+}
+.s-banner-pressel .container .content_pressel_video video{
+    width: 100%;
+    max-width: max-content;
+    max-height: 36rem;
+    border-radius: 1.2rem;
+}
+.s-banner-pressel .container .content_pressel_image{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    align-items: baseline;
+    justify-content: center;
+}
+.s-banner-pressel .container .content_pressel_image span{
+    font-size: var(--body-text);
+}
+.s-banner-pressel .container .content_pressel_video img{
+    width: 100%;
+    max-width: max-content;
+    max-height: 360px;
 }

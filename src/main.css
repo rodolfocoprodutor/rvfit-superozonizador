@@ -79,19 +79,16 @@ h1 {
 h2 {
     font-size: var(--title);
     font-weight: 700;
-    margin-bottom: 2.4rem;
 }
 
 h3 {
     font-size: var(--subtitle);
     font-weight: 600;
-    margin-bottom: 1.6rem;
 }
 
 p {
     font-size: var(--body-text);
     line-height: 1.4em;
-    margin-top: 1.6rem;
     font-weight: 400;
 }
 
@@ -646,6 +643,12 @@ footer section .container .creditos p {
     padding-top: 6.4rem;
     padding-bottom: 6.4rem;    
     vertical-align: middle;
+    background-color: var(--gray-color);
+    background-image: url(../assets/bg_section.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
 }
 .s-banner-obrigado .container{
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -679,11 +682,19 @@ footer section .container .creditos p {
     max-width: max-content;
 }
 
+.s-banner-pressel {
+    background-color: var(--gray-color);
+    background-image: url(../assets/bg_section.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 .s-banner-pressel .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap: 4rem;
-    
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 .s-banner-pressel .container .content_pressel_video{
     display: flex;
@@ -701,18 +712,29 @@ footer section .container .creditos p {
 .s-banner-pressel .container .content_pressel_image{
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
-    width: 100%;
-    height: auto;
     overflow: hidden;
-    align-items: baseline;
-    justify-content: center;
 }
+.s-banner-pressel .container .content_pressel_image .btn{
+    margin-top: 3.2rem;
+    margin-bottom: 2.4rem;
+}
+
 .s-banner-pressel .container .content_pressel_image span{
-    font-size: var(--body-text);
+    font-size: var(--subtitle-h4);
+    font-weight: 500;
 }
-.s-banner-pressel .container .content_pressel_video img{
-    width: 100%;
+
+.s-banner-topo-pressel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: var(--first-color);
+}
+.s-banner-topo-pressel img{
     max-width: max-content;
-    max-height: 360px;
+    max-height: 6rem;
+    object-fit: contain;
 }

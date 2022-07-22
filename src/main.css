@@ -354,11 +354,10 @@ section.s-depoimentos .container .content_depoimentos figure {
 section.s-depoimentos .container .content_depoimentos img {
     scroll-snap-align: start;
     border-radius: .6rem;
-    margin-bottom: 15px;
     width: max-content;
     object-fit: contain;
-    height: 512px;
-    margin-right: .8rem;
+    height: 51.2rem;
+    margin: 1.6rem;
 }
 
 section.s-depoimentos .container .content_depoimentos figure {

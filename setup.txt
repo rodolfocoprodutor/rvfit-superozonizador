@@ -1,0 +1,69 @@
+TIPOGRAFIA MOBILE SUPORTE 360
+name		Usage			    Size		Line H.		Weight
+Header		onboarding		    32-38		+10px		900
+Title		primary			    24-28		+10px		800
+Subtitle	secondary		    18-20		+10px		700
+Body text	body, headline	    16-18		+10px		600
+Details		details			    13-14		+10px		400
+Small		details			    12			+8px		400
+Smallest	tab bar, others		10			+8px		300
+
+GRID MOBILE
+Type: center
+Container: 360px
+Columns: 2
+Column Width: 140px
+Gutter: 20px
+
+--------------------------
+TIPOGRAFIA TABLET
+name		Usage			    Size		Line H.		Weight
+Header		onboarding		    32-38		+10px		900
+Title		primary			    24-28		+10px		800
+Subtitle	secondary		    18-20		+10px		700
+Body text	body, headline		16-18		+10px		600
+Details		details			    13-14		+10px		400
+Small		details			    12			+8px		400
+Smallest	tab bar, others		10			+8px		300
+
+GRID TABLET
+Type: center
+Container: 780px
+Columns: 6
+Column Width: 100px
+Gutter: 20px
+
+--------------------------
+TIPOGRAFIA DESKTOP
+name		Usage			    Size		Line H.		Weight
+Header		onboarding		    40-48		+10px		900
+Title		primary			    34-38		+10px		800
+Subtitle	secondary		    21-24		+10px		700
+Body text	body, headline		20-21		+10px		600
+Details		details			    14-18		+10px		400
+Small		details			    16			+8px		400
+Smallest	tab bar, others		12			+8px		300
+
+GRID DESKTOP
+Type: center
+Container: 1440px
+Columns: 12
+Column Width: 90px
+Gutter: 20px
+
+---------------------------
+COLORES GLOBAIS
+principal: 		#0A24B0
+Second:		    #
+pink:			#
+yellow: 		#
+red: 			#
+black:		    #
+dark:			#
+green: 		    #
+green-hover: 	#
+light: 		    #E9EDF3
+page-bg: 		#B0BCD1
+
+FONTES GLOBAIS
+Poppins

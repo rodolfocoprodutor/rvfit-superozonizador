@@ -403,6 +403,9 @@ section.s-depoimentos_videos .container .content_depoimentos_videos .media-eleme
     grid: auto / repeat(7, auto);
     grid-gap: 1em;
 }
+.s-especialista iframe{
+    margin-inline: auto;
+}
 
 section.s-oferta {
     background-color: var(--gray-color);
